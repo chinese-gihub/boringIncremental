@@ -2,8 +2,8 @@ document.body.onload=function(){
 	document.getElementById("game").style.display="";
 }
 var titleFrames=[
-	"/\Boring Incremental\/",
-	"\/Boring Incremental/\"
+	"/\\Boring Incremental\\/",
+	"\\/Boring Incremental/\\"
 ];
 var titleFrame=0;
 setInterval(()=>{
