@@ -1,4 +1,4 @@
-document.body.onload=function(){
+document.onload=function(){
 	document.getElementById("game").style.display="";
 }
 var titleFrames=[
