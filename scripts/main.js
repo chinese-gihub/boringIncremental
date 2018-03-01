@@ -5,7 +5,7 @@ var titleFrames=[
 	"---Boring Incremental---",
 	"--=Boring Incremental=--",
 	"-==Boring Incremental==-",
-	"===Boring Incremental==="
+	"===Boring Incremental===" //aaaaaaaaaaaaaaa
 ];
 var titleFrame=0;
 window.onload=function(){
