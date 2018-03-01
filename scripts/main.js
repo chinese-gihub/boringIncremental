@@ -8,7 +8,7 @@ var titleFrames=[
 	"===Boring Incremental==="
 ];
 var titleFrame=0;
-document.onload=function(){
+window.onload=function(){
 	game=document.getElementById("game");
 	game.style.display="";
 	setInterval(()=>{
