@@ -40,11 +40,10 @@ function addChocolate (amount) {
 	actualChocolate = Math.floor (chocolateBarDec);
 }
 onload = function () {
-	var dt = (new Date ().getTime ()) - dts;
+
 	var yourChocoIsMyMotto = document.createElement ("p");
 	document.removeChild (document.getElementById ('nojs'));
-	dts = calcDts ();
-	addChocolate (1 / (tickspeed / dt));
+
 	game = document.getElementById ("game");
 	game.style.display = "";
 	game.appendChild (yourChocoIsMyMotto);
@@ -53,7 +52,10 @@ onload = function () {
 		document.title = titleFrames[titleFrame % titleFrames.length];
 	},1000/2);
 	setInterval(()=>{
-		
+		var dt = (new Date ().getTime ()) - dts;
+		dts = calcDts ();
+		addChocolate (1 / (tickspeed / dt));
+		yourChocoIsMyMotto.innerText = "Actual Chocolate: " + actualChocolate;
 	},1000/tickspeed);
-	yourChocoIsMyMotto.innerText = "Actual Chocolate: " + actualChocolate;
+	
 }
