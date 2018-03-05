@@ -53,7 +53,7 @@ onload = function () {
 	setInterval(()=>{
 		var dt = (new Date ().getTime ()) - dts;
 		dts = calcDts ();
-		addChocolate (1 / (tickspeed / dt));
+		addChocolate (1 / (1000 / dt));
 		yourChocoIsMyMotto.innerText = "Actual Chocolate: " + actualChocolate;
 	},1000/tickspeed);
 	
