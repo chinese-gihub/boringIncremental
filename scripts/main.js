@@ -42,7 +42,7 @@ function addChocolate (amount) {
 onload = function () {
 
 	var yourChocoIsMyMotto = document.createElement ("p");
-	document.removeChild (document.getElementById ('nojs'));
+	document.body.removeChild (document.getElementById ('nojs'));
 
 	game = document.getElementById ("game");
 	game.style.display = "";
